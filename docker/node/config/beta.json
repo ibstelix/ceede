@@ -3,6 +3,11 @@
     "rpc_enable": "true",
     "rpc": {
         "version": "1",
+	"address": "::ffff:0.0.0.0",
+        "port": "55000",
+        "enable_control": "true",
+        "frontier_request_limit": "16384",
+        "chain_request_limit": "16384"
         "enable_sign_hash": "false",
         "max_work_generate_difficulty": "ffffffffc0000000",
         "child_process": {
@@ -14,7 +19,7 @@
         "version": "17",
         "peering_port": "54000",
         "bootstrap_fraction_numerator": "1",
-        "receive_minimum": "1000000000000000000000000",
+        "receive_minimum": "100000000000000000000000000000",
         "logging": {
             "version": "7",
             "ledger": "false",
@@ -42,14 +47,14 @@
         },
         "work_peers": "",
         "preconfigured_peers": [
-            "peering-beta.nano.org"
+            "peering-beta.ceede.pro"
         ],
         "preconfigured_representatives": [
-            "nano_3betaz86ypbygpqbookmzpnmd5jhh4efmd8arr9a3n4bdmj1zgnzad7xpmfp",
-            "nano_1beta1ayfkpj1tfbhi3e9ihkocjkqi6ms5e4xrbmbybqnkza1e5jrake8wai",
-            "nano_1beta3kp4j9tn7pko3apyyzbrx789jpc98ep3ufqazanbcxiyyoxmxhjtbfn",
-            "nano_1beta4nkzb3g6b1a1qhae89earmz3gk3kfrp3f8hyztm8qyjkeyz9kajfutq",
-            "nano_1beta5zm6rq4ghp6c9n99j8fz3am8e44dewae5ea7addsjtfo8umsafmr1r7"
+            "cde_3betaz86ypbygpqbookmzpnmd5jhh4efmd8arr9a3n4bdmj1zgnzad7xpmfp",
+            "cde_1beta1ayfkpj1tfbhi3e9ihkocjkqi6ms5e4xrbmbybqnkza1e5jrake8wai",
+            "cde_1beta3kp4j9tn7pko3apyyzbrx789jpc98ep3ufqazanbcxiyyoxmxhjtbfn",
+            "cde_1beta4nkzb3g6b1a1qhae89earmz3gk3kfrp3f8hyztm8qyjkeyz9kajfutq",
+            "cde_1beta5zm6rq4ghp6c9n99j8fz3am8e44dewae5ea7addsjtfo8umsafmr1r7"
         ],
         "online_weight_minimum": "60000000000000000000000000000000000000",
         "online_weight_quorum": "50",
@@ -59,7 +64,7 @@
         "work_threads": "4",
         "signature_checker_threads": "3",
         "enable_voting": "false",
-        "bootstrap_connections": "4",
+        "bootstrap_connections": "16",
         "bootstrap_connections_max": "64",
         "callback_address": "",
         "callback_port": "0",
@@ -92,7 +97,7 @@
                 "version": "1",
                 "enable": "false",
                 "allow_unsafe": "false",
-                "path": "\/tmp\/nano",
+                "path": "\/tmp\/ceede",
                 "io_timeout": "15"
             }
         },
